@@ -1,0 +1,16 @@
+.bannerContainer{
+    height: 400px;
+    background-color: #666;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-image: url('../../assets/images/bannerImg.jpg');
+    background-size: cover;
+}
+#bannerText{
+    color: white;
+    font-size: 7em;
+    font-family: 'Caveat Brush', cursive;
+}

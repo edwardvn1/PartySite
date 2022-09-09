@@ -1,0 +1,50 @@
+.bodyContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -60px;
+}
+.panelTabs{
+    margin: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+.tab{
+    text-align: center;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px 15px;
+    transition: 0.2s;
+}
+.tab:hover{
+    cursor: pointer;
+}
+
+#tab1{
+    background-color: #007eb8;
+}
+#tab2{
+    background-color: #04b8c1;
+}
+#tab3{
+    background-color: #0cd4ad;
+}
+#tab4{
+    background-color: #fd9f13;
+}
+#tab5{
+    background-color: #ff0558;
+}
+
+.centerAll{
+    justify-content: center;
+    align-items: center;
+}

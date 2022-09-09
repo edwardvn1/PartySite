@@ -1,0 +1,17 @@
+<div class="bodyContainer centerAll">
+  <div class="panelTabs centerAll">
+    <div (click)="onPanelClick(0)" class="tab" id="tab1">Home</div>
+    <div (click)="onPanelClick(1)" class="tab" id="tab2">Themes</div>
+    <div (click)="onPanelClick(2)" class="tab" id="tab3">Gallery</div>
+    <div (click)="onPanelClick(3)" class="tab" id="tab4">Fees</div>
+    <div (click)="onPanelClick(4)" class="tab" id="tab5">{{panelEnum}}</div>
+  </div>
+
+  <div class="panelContent" [ngSwitch]="panelEnum">
+    <app-home-panel *ngSwitchCase=0></app-home-panel>
+    <app-theme-panel *ngSwitchCase=1></app-theme-panel>
+    <app-gallery-panel *ngSwitchCase=2></app-gallery-panel>
+    <app-fees-panel *ngSwitchCase=3></app-fees-panel>
+    <app-contact-panel *ngSwitchCase=4></app-contact-panel>
+  </div>
+</div>
